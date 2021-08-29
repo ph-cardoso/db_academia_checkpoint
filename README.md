@@ -8,8 +8,8 @@
 
 - Diagrama Lógico:
 
-![diagrama lógico do banco de dados](./diagramas/diagrama_logico_academia.png "Diagrama Lógico do BD")
+![diagrama lógico do banco de dados](./diagrams_img/diagrama_logico_academia.png "Diagrama Lógico do BD")
 
 - Diagrama Físico:
 
-![diagrama físico do banco de dados](./diagramas/diagrama_fisico_academia.png "Diagrama Físico do BD")
+![diagrama físico do banco de dados](./diagrams_img/diagrama_fisico_academia.png "Diagrama Físico do BD")
