@@ -1,3 +1,8 @@
+/*
+Author: Pedro Henrique Lima Cardoso
+Github repository: https://github.com/ph-cardoso/db_academia_checkpoint
+*/
+
 -- Criaçao do Schema 'db_academia_check2' caso ainda não exista
 CREATE DATABASE IF NOT EXISTS db_academia_check2;
 
@@ -45,7 +50,7 @@ CREATE TABLE cliente(
     dt_nascimento DATE NOT NULL,
     telefone_residencial VARCHAR(14),
     telefone_celular VARCHAR(14),
-    email VARCHAR(14) NOT NULL
+    email VARCHAR(50) NOT NULL
 );
 
 -- Estrutura de criação da tabela 'historico_acesso'
@@ -69,7 +74,7 @@ CREATE TABLE funcionario(
     dt_nascimento DATE NOT NULL,
     telefone_residencial VARCHAR(14),
     telefone_celular VARCHAR(14),
-    email VARCHAR(14) NOT NULL,
+    email VARCHAR(50) NOT NULL,
     FOREIGN KEY (id_cargo) REFERENCES tipo_cargo(id_cargo)
 );
 
@@ -100,7 +105,7 @@ CREATE TABLE contrato(
     id_funcionario INT NOT NULL,
     dt_negociacao DATE NOT NULL,
     dt_validade DATE NOT NULL,
-    desconto DECIMAL(3,2) CHECK(desconto<=1 AND desconto>0) DEFAULT(0),
+    desconto DECIMAL(3,2) CHECK(desconto<=1 AND desconto>=0) DEFAULT(0),
     preco DECIMAL(6,2) CHECK(preco>0) NOT NULL,
     observacao VARCHAR(4000),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
