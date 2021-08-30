@@ -1,3 +1,8 @@
+/*
+Author: Pedro Henrique Lima Cardoso
+Github repository: https://github.com/ph-cardoso/db_academia_checkpoint
+*/
+
 -- Seleciona o esquema
 USE db_academia_check2;
 
